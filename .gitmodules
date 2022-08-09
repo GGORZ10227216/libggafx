@@ -1,0 +1,6 @@
+[submodule ".\\imgui"]
+	path = .\\imgui
+	url = https://github.com/ocornut/imgui.git
+[submodule ".\\imgui_3rdParty\\ImFileDialog"]
+	path = .\\imgui_3rdParty\\ImFileDialog
+	url = https://github.com/dfranx/ImFileDialog.git
