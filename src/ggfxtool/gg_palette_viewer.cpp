@@ -9,7 +9,6 @@
 #include <gg_palette_viewer.h>
 
 #include <glad/glad.h>
-#include <ImFileDialog.h>
 
 namespace gg_widget {
     gg_palette_viewer::gg_palette_viewer(user_interface* parent, std::shared_ptr<gg_gfx::ppu> pPpu, uint32_t serialNum) :

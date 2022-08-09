@@ -2,7 +2,6 @@
 
 #include <videodump_viewer.h>
 #include <gg_palette_viewer.h>
-#include <ImFileDialog.h>
 
 #define SCREEN_WIDTH  1280
 #define SCREEN_HEIGHT 768

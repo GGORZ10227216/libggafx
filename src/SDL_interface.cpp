@@ -4,7 +4,6 @@
 
 #include "SDL_interface.h"
 #include <gg_texture.h>
-#include <ImFileDialog.h>
 
 namespace gg_widget {
     SDL_GL_interface::SDL_GL_interface(int width, int height) :
@@ -20,9 +19,6 @@ namespace gg_widget {
         fp_CreateTexture = &SDL_GL_interface::CreateTexture ;
         fp_DeleteTexture = &SDL_GL_interface::DeleteTexture ;
         fp_UpdateTexture = &SDL_GL_interface::UpdateTexture ;
-
-        ifd::FileDialog::Instance().CreateTexture = fp_CreateTexture;
-        ifd::FileDialog::Instance().DeleteTexture = fp_DeleteTexture;
     }
 
     int SDL_GL_interface::InitSDL() {

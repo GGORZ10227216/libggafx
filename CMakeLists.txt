@@ -16,7 +16,7 @@ file(GLOB IMGUI_SRC imgui/*.cpp)
 file(GLOB SRC src/*.cpp)
 
 set(IMGUI_BACKEND_OGL_SDL imgui/backends/imgui_impl_sdl.cpp imgui/backends/imgui_impl_opengl3.cpp)
-set(IMFILE_SRC imgui_3rdParty/ImFileDialog/ImFileDialog.cpp)
+# set(IMFILE_SRC imgui_3rdParty/ImFileDialog/ImFileDialog.cpp)
 set(GGTOOL_SRC imgui_3rdParty/imgui_grid_image/imgui_grid_image.cpp)
 
 set(GGTOOL_SRC
@@ -34,12 +34,12 @@ set(GGTOOL_SRC
         src/ggfxtool/gg_sprite_viewer.cpp
         )
 
-set(SRC main.cpp ${IMGUI_SRC} ${IMGUI_BACKEND_OGL_SDL} ${IMFILE_SRC} ${GGTOOL_SRC} ${SRC} glad/src/glad.c imgui_3rdParty/imgui_grid_image/imgui_grid_image.cpp imgui_3rdParty/imgui_grid_image/imgui_grid_image.h src/ggfxtool/ppu/sprite.cpp)
+set(SRC main.cpp ${IMGUI_SRC} ${IMGUI_BACKEND_OGL_SDL} ${GGTOOL_SRC} ${SRC} glad/src/glad.c imgui_3rdParty/imgui_grid_image/imgui_grid_image.cpp imgui_3rdParty/imgui_grid_image/imgui_grid_image.h src/ggfxtool/ppu/sprite.cpp)
 
 add_executable(libgafx ${SRC})
 
-include_directories(libgafx PUBLIC
-        glad/include ${SDL2_INCLUDE_DIRS} imgui imgui/backends include include/ggfxtool imgui_3rdParty/ImFileDialog imgui_3rdParty/imgui_memory_editor imgui_3rdParty/imgui_grid_image/)
+include_directories(libgafx PUBLIC ${CMAKE_CURRENT_LIST_DIR}
+        glad/include ${SDL2_INCLUDE_DIRS} imgui imgui/backends include include/ggfxtool imgui_3rdParty/imgui_memory_editor imgui_3rdParty/imgui_grid_image/)
 
 target_link_libraries(libgafx ${SDL2_LDFLAGS} ${FMT_LDFLAGS} -lpthread)
 

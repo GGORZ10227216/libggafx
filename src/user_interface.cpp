@@ -6,7 +6,6 @@
 
 #include <fstream>
 #include <filesystem>
-#include <ImFileDialog.h>
 
 namespace gg_widget {
 //    void* (*user_interface::fp_CreateTexture)(uint8_t *data, int w, int h, char fmt) = nullptr ;
