@@ -1,4 +1,6 @@
 # libggafx
+![](https://i.imgur.com/T8zLGlI.png)
+
 An experimental GBA PPU emulation library with an ImGui front-end
 
 This project is still work in progress, feel free to send me an issue if you:
