@@ -24,7 +24,16 @@ cmake ../
 make
 ```
 
-# Todo:
+## Usage
+- The front end need 4 VRAM area dumps to work:
+  - IO (04000000-040003FE)
+  - Palette (05000000-050003FF)
+  - VRAM (06000000-06017FFF)
+  - OAM (07000000-070003FF)
+- You can use NO$GBA's memory dump feature to get them.
+- Use "io.bin", "palette.bin", "vram.bin", "oam.bin" as their names, then put them with executable.
+
+## Todo:
 - Bitmap mode
 - Full functional sprite emulation
 - Mosaic and alpha blending effect 
