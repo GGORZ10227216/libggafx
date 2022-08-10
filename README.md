@@ -11,7 +11,7 @@ This project is still work in progress, feel free to send me an issue if you:
 
 I have been tested the whole build process with MSYS2 and linux system with gcc toolchain
 
-## Dependency library
+## Library dependencies
 - libsdl2
 - libfmt-dev
 
